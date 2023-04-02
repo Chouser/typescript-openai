@@ -1,0 +1,3 @@
+On nix, run in this directory: nix-shell (as an alternative to nvm)
+
+To compile: npx rollup -c
