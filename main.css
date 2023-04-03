@@ -1,0 +1,48 @@
+body {
+    margin-top: 0;
+    font-family: sans;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.6);
+}
+
+.drop {
+    display: flex;
+    height: 100px;
+    border: 1px #555 dashed;
+    border-radius: 20px;
+}
+.drop input {
+    display: none;
+}
+.drop .click {
+    color: blue;
+    text-decoration: underline;
+}
+.drop div {
+    margin: auto;
+}
+
+caption {
+    text-align: left;
+    background: #aaa;
+}
+
+main table {
+    border-collapse: collapse;
+}
+main tr:nth-child(even) {
+  background-color: #eee;
+}
+
+main tr:nth-child(odd) {
+  background-color: #fff;
+}
+main thead tr th {
+    text-align: left;
+    background: #aaa;
+}

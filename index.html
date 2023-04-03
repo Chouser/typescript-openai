@@ -3,11 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>CSV loader</title>
+    <link rel="styleSheet" href="main.css" />
   </head>
   <body>
     <header>
-      <h1>CSV loader</h1>
-      <input type="file" id="csv-file-input" accept=".csv">
+      <table style="width: 100%">
+        <tr>
+          <td>CSV Loader</td>
+          <td>
+            <label class="drop">
+              <div>
+                Drop CSV file to analyze, or <span class="click">click</span> to browse.
+              </div>
+
+              <input type="file" id="csv-file-input" accept=".csv">
+            </label>
+          </td>
+          <td style="text-align: right;">Login</td>
+        </tr>
+      </table>
     </header>
     <main id="csv-main">
     </main>

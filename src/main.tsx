@@ -1,3 +1,4 @@
+import * as elements from 'typed-html';
 import * as Papa from 'papaparse';
 
 const csvFileInput = document.getElementById('csv-file-input') as HTMLInputElement;
@@ -14,7 +15,10 @@ function handleCsvFileInputChange(event: Event) {
 
     // Display file info
     const caption = document.createElement('caption');
-    caption.innerText = `File name: ${file.name}, size: ${file.size} bytes`;
+    caption.innerHTML = <span>
+      File name: <b><code>{file.name}</code></b>,
+          size: <code>{file.size}</code> bytes
+    </span>;
     table.appendChild(caption);
     csvMain.insertBefore(table, csvMain.firstChild);
 

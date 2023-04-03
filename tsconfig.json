@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["es5", "es6", "dom"],
     "sourceMap": true,
     "module": "esnext",
@@ -14,6 +14,8 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "jsx": "react",
+    "jsxFactory": "elements.createElement"
   },
 }
